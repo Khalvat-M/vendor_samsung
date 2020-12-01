@@ -205,7 +205,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsam.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsam.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsec-ril.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensirion_ks01_eur.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensirion_ks01_eur.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorhub.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensorhubcontext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorhubcontext.so \
