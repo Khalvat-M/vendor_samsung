@@ -167,8 +167,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/klte-common/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
     vendor/samsung/klte-common/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
-    vendor/samsung/klte-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
-    vendor/samsung/klte-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/samsung/klte-common/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
     vendor/samsung/klte-common/proprietary/vendor/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcnvitems.xml \
     vendor/samsung/klte-common/proprietary/vendor/firmware/bcm4350_V0395.0797.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4350_V0395.0797.hcd \
@@ -265,5 +263,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     qcnvitems \
-    qcrilhook \
-    shutdownlistener
+    qcrilhook
