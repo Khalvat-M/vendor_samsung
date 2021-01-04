@@ -19,7 +19,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/msm8974-common
     
 PRODUCT_COPY_FILES += \
-    vendor/samsung/msm8974-common/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/samsung/msm8974-common/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/samsung/msm8974-common/proprietary/vendor/bin/mpdecision:$(TARGET_COPY_OUT_VENDOR)/bin/mpdecision \
     vendor/samsung/msm8974-common/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
