@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter kltexx klte klteacg klteatt kltecan kltelra kltetmo klteub klteusc kltevzw kltedv kltespr kltekor kltektt kltelgt klteskt kltevzw klteactivexx klteattactive,$(TARGET_DEVICE)),)
+ifneq ($(filter klte klteacg klteatt kltecan kltelra kltetmo klteub klteusc kltevzw kltedv kltespr kltekor kltektt kltelgt klteskt kltevzw klteactivexx klteattactive kltechnduo klteduos,$(TARGET_DEVICE)),)
 
 endif

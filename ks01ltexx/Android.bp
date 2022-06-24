@@ -22,3 +22,28 @@ cc_prebuilt_library_shared {
 	check_elf_files: false,
 }
 
+android_app_import {
+	name: "qcrilmsgtunnel",
+	owner: "samsung",
+	apk: "proprietary/app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	soc_specific: true,
+}
+
+dex_import {
+	name: "qcnvitems",
+	owner: "samsung",
+	jars: ["proprietary/vendor/framework/qcnvitems.jar"],
+	soc_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "samsung",
+	jars: ["proprietary/vendor/framework/qcrilhook.jar"],
+	soc_specific: true,
+}

@@ -4,28 +4,33 @@
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/ks01ltexx
-    
+
 PRODUCT_COPY_FILES += \
     vendor/samsung/ks01ltexx/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/samsung/ks01ltexx/proprietary/vendor/bin/hci_qcomm_init:$(TARGET_COPY_OUT_VENDOR)/bin/hci_qcomm_init \
     vendor/samsung/ks01ltexx/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/samsung/ks01ltexx/proprietary/vendor/bin/mpdecision:$(TARGET_COPY_OUT_VENDOR)/bin/mpdecision \
+    vendor/samsung/ks01ltexx/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
+    vendor/samsung/ks01ltexx/proprietary/vendor/bin/qmuxd:$(TARGET_COPY_OUT_VENDOR)/bin/qmuxd \
+    vendor/samsung/ks01ltexx/proprietary/vendor/bin/rfs_access:$(TARGET_COPY_OUT_VENDOR)/bin/rfs_access \
+    vendor/samsung/ks01ltexx/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/samsung/ks01ltexx/proprietary/vendor/bin/sensorhubservice:$(TARGET_COPY_OUT_VENDOR)/bin/sensorhubservice \
     vendor/samsung/ks01ltexx/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/samsung/ks01ltexx/proprietary/vendor/cameradata/datapattern_420sp.yuv:$(TARGET_COPY_OUT_VENDOR)/cameradata/datapattern_420sp.yuv \
     vendor/samsung/ks01ltexx/proprietary/vendor/cameradata/datapattern_front_420sp.yuv:$(TARGET_COPY_OUT_VENDOR)/cameradata/datapattern_front_420sp.yuv \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
-    vendor/samsung/ks01ltexx/proprietary/vendor/etc/C13QL_s5k3l2xx_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/C13QL_s5k3l2xx_module_info.xml \
-    vendor/samsung/ks01ltexx/proprietary/vendor/etc/C13QS_imx135_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/C13QS_imx135_module_info.xml \
-    vendor/samsung/ks01ltexx/proprietary/vendor/etc/D13QL_s5k3l2xx_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/D13QL_s5k3l2xx_module_info.xml \
-    vendor/samsung/ks01ltexx/proprietary/vendor/etc/D13QS_imx135_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/D13QS_imx135_module_info.xml \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/General_cal.acdb \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Global_cal.acdb \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/acdbdata/Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Handset_cal.acdb \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
-    vendor/samsung/ks01ltexx/proprietary/vendor/firmware/cpp_firmware_v1_2_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_2_0.fw \
+    vendor/samsung/ks01ltexx/proprietary/vendor/etc/C13QL_s5k3l2xx_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/C13QL_s5k3l2xx_module_info.xml \
+    vendor/samsung/ks01ltexx/proprietary/vendor/etc/C13QS_imx135_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/C13QS_imx135_module_info.xml \
+    vendor/samsung/ks01ltexx/proprietary/vendor/etc/D13QL_s5k3l2xx_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/D13QL_s5k3l2xx_module_info.xml \
+    vendor/samsung/ks01ltexx/proprietary/vendor/etc/D13QS_imx135_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/D13QS_imx135_module_info.xml \
+    vendor/samsung/ks01ltexx/proprietary/vendor/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcnvitems.xml \
+    vendor/samsung/ks01ltexx/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin_a0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin_a0 \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/wifi/bcmdhd_ibss.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_ibss.bin \
@@ -48,17 +53,18 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/wifi/nvram_net.txt_muratafem2:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram_net.txt_muratafem2 \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/wifi/nvram_net.txt_semco3rd:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram_net.txt_semco3rd \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/wifi/nvram_net.txt_semcosh:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram_net.txt_semcosh \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libTsAe.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libTsAe.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libTsAf.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libTsAf.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libTs_J_Accm.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libTs_J_Accm.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libTs_J_Awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libTs_J_Awb.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_common.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm2079xB4_firmware.ncd \
+    vendor/samsung/ks01ltexx/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm2079xB4_pre_firmware.ncd \
+    vendor/samsung/ks01ltexx/proprietary/vendor/firmware/bcm4335B0_V0343.0358.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4335B0_V0343.0358.hcd \
+    vendor/samsung/ks01ltexx/proprietary/vendor/firmware/bcm4335_prepatch.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4335_prepatch.hcd \
+    vendor/samsung/ks01ltexx/proprietary/vendor/firmware/cpp_firmware_v1_2_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_2_0.fw \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_common_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_common_1080p_b.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_common_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_common_1080p_s.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_common_res0.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_common_res0.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_common_res1.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_common_res1.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_common_res2.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_common_res2.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_common_res3.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_common_res3.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_common.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_default_video.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_golfshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_golfshot.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_hfr_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_hfr_1080p_b.so \
@@ -69,18 +75,20 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_preview.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_snapshot.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_uhd_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_uhd_video.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_vt_hd.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_vt.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_zslshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libTsAe.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libTsAe.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libTsAf.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libTsAf.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libTs_J_Accm.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libTs_J_Accm.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libTs_J_Awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libTs_J_Awb.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_common.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libTsAe.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libTsAe.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libTsAf.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libTsAf.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libTs_J_Accm.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libTs_J_Accm.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libTs_J_Awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libTs_J_Awb.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_common_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_common_1080p_b.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_common_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_common_1080p_s.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_common_res0.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_common_res0.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_common_res1.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_common_res1.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_common_res2.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_common_res2.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_common_res3.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_common_res3.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_common.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_default_video.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_golfshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_golfshot.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_hfr_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_hfr_1080p_b.so \
@@ -91,22 +99,44 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_preview.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_snapshot.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_uhd_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_uhd_video.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_vt_hd.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_vt.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_zslshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libTsAe.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libTsAe.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libTsAf.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libTsAf.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libTs_J_Accm.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libTs_J_Accm.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libTs_J_Awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libTs_J_Awb.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_1080p_b.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_1080p_s.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_res0.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_res0.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_res1.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_res1.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_res2.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_res2.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_res3.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_res3.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_default_video.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_golfshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_golfshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_hfr_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_hfr_1080p_b.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_hfr_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_hfr_1080p_s.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_hfr_120.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_liveshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_pip.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_pip.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_preview.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_snapshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_uhd_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_uhd_video.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_vt_hd.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_vt.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_zslshot.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libTsAe.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libTsAe.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libTsAf.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libTsAf.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libTs_J_Accm.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libTs_J_Accm.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libTs_J_Awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libTs_J_Awb.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libTsAe.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libTsAe.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libTsAf.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libTsAf.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libTs_J_Accm.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libTs_J_Accm.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libTs_J_Awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libTs_J_Awb.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_common.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_common_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_common_1080p_b.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_common_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_common_1080p_s.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_common_res0.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_common_res0.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_common_res1.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_common_res1.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_common_res2.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_common_res2.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_common_res3.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_common_res3.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_common.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_default_video.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_golfshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_golfshot.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_hfr_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_hfr_1080p_b.so \
@@ -117,93 +147,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_preview.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_snapshot.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_uhd_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_uhd_video.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_vt_hd.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_vt.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_zslshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libTsAe.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libTsAe.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libTsAf.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libTsAf.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libTs_J_Accm.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libTs_J_Accm.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libTs_J_Awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libTs_J_Awb.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/hw/camera.vendor.msm8974.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.vendor.msm8974.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/hw/sensorhubs.msm8974.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensorhubs.msm8974.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/hw/sensors.vendor.msm8974.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.vendor.msm8974.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libTsAe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTsAe.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libTsAf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTsAf.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libTs_J_Accm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTs_J_Accm.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libTs_J_Awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTs_J_Awb.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libarcsoft_nighthawk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_nighthawk.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_1080p_b.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_1080p_s.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_res0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_res0.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_res1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_res1.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_res2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_res2.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_res3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_res3.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_default_video.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_golfshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_golfshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_hfr_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_1080p_b.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_hfr_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_1080p_s.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_120.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_liveshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_pip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_pip.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_preview.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_snapshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_uhd_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_uhd_video.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_zslshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_1080p_b.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_1080p_s.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_res0.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_res1.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_res2.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_res3.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_default_video.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_golfshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_golfshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_hfr_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_hfr_1080p_b.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_hfr_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_hfr_1080p_s.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_hfr_120.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_liveshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_pip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_pip.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_preview.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_snapshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_uhd_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_uhd_video.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_zslshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_common.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_default_video.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_pip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_pip.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_preview.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_smart_stay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_smart_stay.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_vt.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_vt_hd.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_zslshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libgnustl_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnustl_shared.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libliveframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libliveframework.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libthermalioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalioctl.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_algorithm.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_cac2_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_cac2_lib.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_fidelix_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_fidelix_eeprom.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_s5k6b2yx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k6b2yx.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsam.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsam.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensirion_ks01_eur.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensirion_ks01_eur.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorhub.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensorhubcontext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorhubcontext.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensorhubservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorhubservice.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libvdis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvdis.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/firmware/bcm2079xB4_firmware.ncd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm2079xB4_firmware.ncd \
-    vendor/samsung/ks01ltexx/proprietary/vendor/firmware/bcm2079xB4_pre_firmware.ncd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm2079xB4_pre_firmware.ncd \
-    vendor/samsung/ks01ltexx/proprietary/vendor/firmware/bcm4335B0_V0343.0358.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4335B0_V0343.0358.hcd \
-    vendor/samsung/ks01ltexx/proprietary/vendor/firmware/bcm4335_prepatch.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4335_prepatch.hcd \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_vt.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QL_libchromatix_s5k3l2xx_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QL_libchromatix_s5k3l2xx_vt_hd.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_vt.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/C13QS_libchromatix_imx135_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/C13QS_libchromatix_imx135_vt_hd.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_vt.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_vt_hd.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_vt.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QS_libchromatix_imx135_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QS_libchromatix_imx135_vt_hd.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libacdbmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbmapper.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
@@ -217,15 +170,71 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libactuator_wv560_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_wv560_camera.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libarcsoft_nighthawk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_nighthawk.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_vt.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_1080p_b.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_1080p_s.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_res0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_res0.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_res1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_res1.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_res2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_res2.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common_res3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common_res3.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_default_video.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_golfshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_golfshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_hfr_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_1080p_b.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_hfr_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_1080p_s.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_120.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_liveshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_pip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_pip.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_preview.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_snapshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_uhd_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_uhd_video.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_vt_hd.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_vt.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_vt.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_imx135_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_zslshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_1080p_b.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_1080p_s.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_res0.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_res1.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_res2.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common_res3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common_res3.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_common.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_default_video.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_golfshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_golfshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_hfr_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_hfr_1080p_b.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_hfr_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_hfr_1080p_s.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_hfr_120.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_liveshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_pip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_pip.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_preview.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_snapshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_uhd_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_uhd_video.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_vt_hd.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_vt.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k3l2xx_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l2xx_zslshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_common.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_default_video.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_pip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_pip.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_preview.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_smart_stay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_smart_stay.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_vt_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_vt_hd.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_vt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_vt.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libchromatix_s5k6b2yx_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k6b2yx_zslshot.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libgnustl_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnustl_shared.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libliveframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libliveframework.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmm-abl-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-abl-oem.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
@@ -234,47 +243,74 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_isp_modules.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_pproc_modules.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_algorithm.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera2_vpe_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_vpe_module.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera2_wnr_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_wnr_module.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_cac2_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_cac2_lib.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_fidelix_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_fidelix_eeprom.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_image_stab.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_image_stab.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_imx135.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx135.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_s5k3l1yx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3l1yx.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_s5k3l2xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3l2xx.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_s5k4e5ya.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k4e5ya.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_s5k6b2yx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k6b2yx.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/liboemcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcamera.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqcgesture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcgesture.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqcsyncgesture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcsyncgesture.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-qmi-1.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsam.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsam.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libscve.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscve.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libscve_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscve_stub.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensirion_ks01_eur.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensirion_ks01_eur.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensorhubcontext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorhubcontext.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensorhubservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorhubservice.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorhub.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmemlog.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libthermalioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalioctl.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libTsAe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTsAe.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libTsAf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTsAf.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libTs_J_Accm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTs_J_Accm.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libTs_J_Awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTs_J_Awb.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libvdis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvdis.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libdspCV_skel.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp_skel.so \
+    vendor/samsung/ks01ltexx/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/samsung/ks01ltexx/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_1080p_b.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_1080p_s.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_res0.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_res0.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_res1.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_res1.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_res2.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_res2.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_common_res3.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_common_res3.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_default_video.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_golfshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_golfshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_hfr_1080p_b.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_hfr_1080p_b.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_hfr_1080p_s.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_hfr_1080p_s.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_hfr_120.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_liveshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_pip.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_pip.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_preview.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_snapshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_uhd_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_uhd_video.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/D13QL_libchromatix_s5k3l2xx_zslshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/D13QL_libchromatix_s5k3l2xx_zslshot.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_s5k3l1yx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3l1yx.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_s5k3l2xx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3l2xx.so \
-    vendor/samsung/ks01ltexx/proprietary/vendor/lib/libmmcamera_s5k4e5ya.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k4e5ya.so \
 
 PRODUCT_PACKAGES += \
-    libmm-abl
+    libmm-abl \
+    qcnvitems \
+    qcrilhook \
+    qcrilmsgtunnel
