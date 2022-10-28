@@ -31,6 +31,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/D13QS_imx135_module_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/D13QS_imx135_module_info.xml \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcnvitems.xml \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml \
+    vendor/samsung/ks01ltexx/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
+    vendor/samsung/ks01ltexx/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/wifi/bcmdhd_apsta.bin_a0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_apsta.bin_a0 \
     vendor/samsung/ks01ltexx/proprietary/vendor/etc/wifi/bcmdhd_ibss.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_ibss.bin \
@@ -313,4 +315,5 @@ PRODUCT_PACKAGES += \
     libmm-abl \
     qcnvitems \
     qcrilhook \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    shutdownlistener
